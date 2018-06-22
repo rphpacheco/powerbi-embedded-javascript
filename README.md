@@ -1,3 +1,3 @@
 # powerbi-embedded-javascript
 
-[![npm](https://img.shields.io/npm/dt/express.svg)](https://github.com/rphpacheco/powerbi-embedded-javascript)
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/rphpacheco/powerbi-embedded-javascript)

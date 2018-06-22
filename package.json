@@ -1,0 +1,34 @@
+{
+  "name": "powerbi-embedded-javascript",
+  "version": "1.0.0",
+  "description": "Embedded Power BI reports in web applications using javascript",
+  "main": "main.js",
+  "scripts": {
+    "prod": "node main.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rphpacheco/powerbi-embedded-javascript.git"
+  },
+  "keywords": [
+    "web-aplications",
+    "powerbi-embedded",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Raphael Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rphpacheco/powerbi-embedded-javascript/issues"
+  },
+  "homepage": "https://github.com/rphpacheco/powerbi-embedded-javascript#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.4",
+    "nodemon": "^1.17.5"
+  }
+}

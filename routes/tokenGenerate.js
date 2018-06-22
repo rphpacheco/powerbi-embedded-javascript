@@ -2,8 +2,12 @@ const request = require("request")
 
 const tokenGenerate = async (req, res) => {
 
-  const type = req.query.type
-  const appToken = req.headers['x-app-token']
+  const type = req.query.type,
+  appIdReport = req.headers['x-app-id-report'] || null,
+  appIdGroup = req.headers['x-app-id-group'] || null,
+  appToken = req.headers['x-app-token'] || null,
+  appUserName = req.headers['x-app-user'] || null,
+  appUserPassword = req.headers['x-app-password'] || null
 
   const options = {
     app : { 
@@ -16,14 +20,14 @@ const tokenGenerate = async (req, res) => {
         grant_type: 'password',
         scope: 'openid',
         resource: 'https://analysis.windows.net/powerbi/api',
-        client_id: '<client_id>',
-        username: '<username>',
-        password: '<password>' 
+        client_id: '2fa55e2e-ef05-43b5-b159-5c028bb7ab2a',
+        username: appUserName,
+        password: appUserPassword
       } 
     },
     report : { 
       method: 'POST',
-      url: 'https://api.powerbi.com/v1.0/myorg/groups/<group_id>/reports/<report_id>/GenerateToken',
+      url: `https://api.powerbi.com/v1.0/myorg/groups/${appIdGroup}/reports/${appIdReport}/GenerateToken`,
       headers: {
         authorization: `Bearer ${appToken}`,
         'content-type': 'application/x-www-form-urlencoded' 

@@ -16,6 +16,8 @@ const token = require('../routes/tokenGenerate')
 
 app.get('/tokenGenerate', token.tokenGenerate)
 
+require('../config/users')(app)
+
 app.use('*', (req, res) => {
     const message = `${req.originalUrl} not found`
     console.log(message)

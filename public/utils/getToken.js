@@ -5,11 +5,15 @@ const API = {
     report : '/tokenGenerate?type=report'
 }
 
-export const getToken = async (type, token) => {
+export const getToken = async (type, user, report, token) => {
 
     const headers = {
         headers : {
-            'x-app-token' : token
+            'x-app-id-report' : !report ? null : report.id,
+            'x-app-id-group' : !report ? null : report.group_id,
+            'x-app-token' : token,
+            'x-app-user' : !user ? null : user.username,
+            'x-app-password' : !user ? null : user.password
         }
     }
 

@@ -4,7 +4,7 @@ const users = [
     {
         id : '1',
         username : 'raphael.pacheco',
-        password : '12345',
+        password : '11111',
         powerbi : {
             username : process.env.USERNAME,
             password : process.env.PASSWORD,
@@ -25,7 +25,7 @@ const users = [
     {
         id : '2',
         username : 'gustavo.trevisan',
-        password : '12345',
+        password : '22222',
         powerbi : {
             username : process.env.USERNAME,
             password : process.env.PASSWORD,
@@ -46,7 +46,7 @@ const users = [
     {
         id : '3',
         username : 'esequiel.virtuoso',
-        password : '12345',
+        password : '33333',
         powerbi : {
             username : process.env.USERNAME,
             password : process.env.PASSWORD,
@@ -67,7 +67,7 @@ const users = [
     {
         id : '4',
         username : 'ismael.virtuoso',
-        password : '12345',
+        password : '44444',
         powerbi : {
             username : process.env.USERNAME,
             password : process.env.PASSWORD,
